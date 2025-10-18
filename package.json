@@ -1,0 +1,38 @@
+{
+  "name": "sipapp",
+  "version": "1.0.0",
+  "description": "Electron wrapper for SipApp",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . --no-sandbox --disable-gpu",
+    "start:dev": "electron .",
+    "dist": "electron-builder --linux",
+    "pack": "electron-builder --dir"
+  },
+  "author": "CELYA",
+  "license": "AGPL",
+  "devDependencies": {
+    "electron": "^38.2.2",
+    "electron-builder": "^24.0.0"
+  },
+  "dependencies": {
+    "sql.js": "^1.13.0"
+  },
+  "build": {
+    "productName": "SipApp",
+    "appId": "fr.celya/sipapp",
+    "files": [
+      "**/*",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md}",
+      "!**/*.map"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

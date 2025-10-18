@@ -1,0 +1,2 @@
+2025/10/14-14:32:53.114 1fa2 Creating DB /opt/freepbx/www/electronapp/.config/sipapp/IndexedDB/file__0.indexeddb.leveldb since it was missing.
+2025/10/14-14:32:53.177 1fa2 Reusing MANIFEST /opt/freepbx/www/electronapp/.config/sipapp/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
